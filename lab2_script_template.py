@@ -16,7 +16,7 @@ def main():
             }
         ]
     }
-
+    return
 
 
     # TODO: Step 3 - Add another movie to the data structure
@@ -25,9 +25,18 @@ def main():
         "genre": "Drama, Science Fiction"
     })
 
-    
+    print_student_name_and_id(student_info)
+
+    print_pizza_toppings(student_info)
+    return
+
 # TODO: Step 4 - Function that prints student name and ID	
 def print_student_name_and_id(about_me):
+    full_name = about_me["full_name"]
+    first_name = full_name.split()[0]
+    student_id = about_me["student_id"]
+    print(f"My name is {full_name}, but you can call me Sir {first_name}.")
+    print(f"My student ID is {student_id}.")
     return
     
 # TODO: Step 5 - Function that adds pizza toppings to data structure

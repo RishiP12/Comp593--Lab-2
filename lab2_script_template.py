@@ -16,7 +16,7 @@ def main():
             }
         ]
     }
-    return
+
 
 
     # TODO: Step 3 - Add another movie to the data structure
@@ -28,6 +28,15 @@ def main():
     print_student_name_and_id(student_info)
 
     print_pizza_toppings(student_info)
+
+    new_toppings = ("ONION", "PANEER")
+    add_pizza_toppings(student_info, new_toppings)
+
+    print_pizza_toppings(student_info)
+
+    print_movie_genres(student_info)
+
+    print_movie_titles(student_info["movies"])
     
 
 # TODO: Step 4 - Function that prints student name and ID	
